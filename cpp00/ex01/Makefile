@@ -6,7 +6,7 @@
 #    By: dcho <dcho@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/10 13:57:42 by dcho              #+#    #+#              #
-#    Updated: 2021/11/10 16:08:46 by dcho             ###   ########.fr        #
+#    Updated: 2021/11/11 13:50:09 by dcho             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,9 @@ RM = rm -f
 
 NAME = phonebook
 
-SRC =	main.cpp
+SRC =	main.cpp\
+		Phonebook.cpp\
+		Contacts.cpp
 
 SRC_DIR = ./srcs/
 

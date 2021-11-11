@@ -10,6 +10,11 @@ void Contacts::setlName(std::string l_name)
 	lName = l_name;
 }
 
+void Contacts::setnName(std::string n_name)
+{
+	nName = n_name;
+}
+
 void Contacts::setpNumber(std::string p_n)
 {
 	pNumber = p_n;
@@ -28,6 +33,11 @@ std::string Contacts::getfName(void)
 std::string Contacts::getlName(void)
 {
 	return(lName);
+}
+
+std::string Contacts::getnName(void)
+{
+	return(nName);
 }
 
 std::string Contacts::getpNumber(void)
