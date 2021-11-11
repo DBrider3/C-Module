@@ -6,26 +6,26 @@
 #    By: dcho <dcho@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/10 13:57:42 by dcho              #+#    #+#              #
-#    Updated: 2021/11/11 13:50:09 by dcho             ###   ########.fr        #
+#    Updated: 2021/11/11 17:50:58 by dcho             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = clang++
-CFLAGS = -Wall -Wextra -Werror -I ./includes
+CFLAGS = -Wall -Wextra -Werror
 
-RM = rm -f
+RM = rm -rf
 
 NAME = phonebook
 
 SRC =	main.cpp\
 		Phonebook.cpp\
 		Contacts.cpp
-
 SRC_DIR = ./srcs/
-
 SRCS = $(addprefix $(SRC_DIR),$(SRC))
 
-OBJS = $(SRCS:.c=.o)
+OBJ = $(SRC:.cpp=.o)
+OBJ_DIR = ./objs/
+OBJS = $(addprefix $(OBJ_DIR), $(OBJ))
 
 all : $(NAME)
 
@@ -33,11 +33,12 @@ $(NAME) : $(OBJS)
 		$(CC) $(CFLAGS) $^ \
 		-o $@
 
-%.o : $(SRC_DIR)/%.c
+$(OBJ_DIR)%.o : $(SRC_DIR)/%.cpp
+		@mkdir -p $(OBJ_DIR)
 		$(CC) $(CFLAGS) -o $@ -c $<
 
 clean:
-		$(RM) $(OBJS)
+		$(RM) $(OBJ_DIR)
 
 fclean: clean
 		$(RM) $(NAME)
