@@ -6,7 +6,7 @@
 #    By: dcho <dcho@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/10 13:57:42 by dcho              #+#    #+#              #
-#    Updated: 2021/11/11 17:50:58 by dcho             ###   ########.fr        #
+#    Updated: 2021/11/12 15:58:51 by dcho             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,6 +36,7 @@ $(NAME) : $(OBJS)
 $(OBJ_DIR)%.o : $(SRC_DIR)/%.cpp
 		@mkdir -p $(OBJ_DIR)
 		$(CC) $(CFLAGS) -o $@ -c $<
+
 
 clean:
 		$(RM) $(OBJ_DIR)
