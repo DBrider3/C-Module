@@ -12,6 +12,8 @@ class Contacts
 		std::string pNumber;
 		std::string dSecret;
 	public:
+		Contacts();
+		~Contacts();
 		void setfName(std::string);
 		void setlName(std::string);
 		void setnName(std::string);

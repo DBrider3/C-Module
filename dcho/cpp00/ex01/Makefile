@@ -6,12 +6,13 @@
 #    By: dcho <dcho@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/10 13:57:42 by dcho              #+#    #+#              #
-#    Updated: 2021/11/12 15:58:51 by dcho             ###   ########.fr        #
+#    Updated: 2021/11/16 15:18:44 by dcho             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = clang++
 CFLAGS = -Wall -Wextra -Werror
+CDEBUG = -fsanitize=address -g -std=c++98
 
 RM = rm -rf
 

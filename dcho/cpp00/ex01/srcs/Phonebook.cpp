@@ -1,5 +1,16 @@
 #include "Phonebook.hpp"
 
+PhoneBook::PhoneBook()
+{
+	size = 0;
+	std::cout << "Hello Phonebook!!" << std::endl;
+}
+
+PhoneBook::~PhoneBook()
+{
+	std::cout << "Bye~~🥴!!" << std::endl;
+}
+
 std::string PhoneBook::my_cin()
 {
 	std::string input;

@@ -11,16 +11,11 @@ class PhoneBook
 		Contacts contact[8];
 		int	size;
 	public:
-		PhoneBook(){
-			size = 0;
-			std::cout << "Hello Phonebook!!" << std::endl;
-		}
+		PhoneBook();
+		~PhoneBook();
 		void add(int i);
 		void search();
 		std::string my_cin();
-		~PhoneBook(){
-			std::cout << "Bye~~🥴!!" << std::endl;
-		}
 };
 
 #endif
