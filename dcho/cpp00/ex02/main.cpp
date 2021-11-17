@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <time.h>
 
 int	main(void)
 {
@@ -18,6 +19,16 @@ int	main(void)
 	std::cout << *dep_begin << std::endl;
 	std::cout << *(dep_end - 1) << std::endl;
 	std::cout << d_size << std::endl;
+
+	time_t rawtime;
+	char buf[18];
+
+	time(&rawtime);
+	strftime(buf, 18, "[%Y%m%d_%H%M%S]", localtime(&rawtime));
+	std::cout << buf;
+	std::cout << " index:0;amount:42;created" << std::endl;
+	std::cout << buf;
+	std::cout << " index:1;amount:54;created" << std::endl;
 
 
 }
