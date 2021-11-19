@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: dcho <dcho@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/11/10 13:57:42 by dcho              #+#    #+#              #
-#    Updated: 2021/11/19 13:42:20 by dcho             ###   ########.fr        #
+#    Created: 2021/11/19 13:41:02 by dcho              #+#    #+#              #
+#    Updated: 2021/11/19 13:45:00 by dcho             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,10 +16,12 @@ CDEBUG = -fsanitize=address -g -std=c++98
 
 RM = rm -rf
 
-NAME = program
+NAME = BraiiiiiiinnnzzzZ
 
-SRC =	tests.cpp\
-		Account.cpp
+SRC =	main.cpp\
+		Zombie.cpp\
+		newZombie.cpp\
+		randomChump.cpp
 
 SRC_DIR = ./srcs/
 SRCS = $(addprefix $(SRC_DIR),$(SRC))
