@@ -3,12 +3,9 @@ CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 RM = rm -rf
 
-NAME = program
+NAME = replace
 
-SRC =	main.cpp\
-		Zombie.cpp\
-		newZombie.cpp\
-		randomChump.cpp
+SRC =	main.cpp
 
 SRC_DIR = ./srcs/
 SRCS = $(addprefix $(SRC_DIR),$(SRC))
@@ -32,6 +29,7 @@ clean:
 
 fclean: clean
 		$(RM) $(NAME)
+		$(RM) *.replace
 
 re : fclean all
 

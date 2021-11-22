@@ -1,15 +1,15 @@
-// #include "Zombie.hpp"
-
-#include <iostream>
-
+#include "Zombie.hpp"
 
 int	main(void)
 {
-	int *value = new(std::nothrow)int;
-	if (!value)
-		std::cout << "Could not allocate memory";
-	else
-		std::cout << "allocate memory";
+	std::string nameHeap = "heapZombie";
+	std::string nameStack = "stackZombie";
 
+	Zombie *heap = newZombie(nameHeap);
+	heap->announce();
+	delete(heap);
+	heap = NULL;
+
+	randomChump(nameStack);
 	return (0);
 }

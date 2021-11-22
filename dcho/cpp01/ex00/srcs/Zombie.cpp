@@ -1,14 +1,14 @@
 #include "Zombie.hpp"
 
-Zombie(std::string input)
-{
-	name = input;
+Zombie::Zombie(std::string input): _name(input) {}
 
+Zombie::~Zombie()
+{
+	std::cout << _name << " Zombie Bye~😜!!" << std::endl;
 }
 
-~Zombie(){};
-
-std::string announce()
+void Zombie::announce(void)
 {
 
+	std::cout << _name << " BraiiiiiiinnnzzzZ..." << std::endl;
 }
