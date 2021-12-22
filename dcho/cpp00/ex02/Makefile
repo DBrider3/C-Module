@@ -6,7 +6,7 @@
 #    By: dcho <dcho@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/10 13:57:42 by dcho              #+#    #+#              #
-#    Updated: 2021/11/19 13:42:20 by dcho             ###   ########.fr        #
+#    Updated: 2021/11/17 15:37:38 by dcho             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ NAME = program
 SRC =	tests.cpp\
 		Account.cpp
 
-SRC_DIR = ./srcs/
+SRC_DIR = ./
 SRCS = $(addprefix $(SRC_DIR),$(SRC))
 
 OBJ = $(SRC:.cpp=.o)
@@ -34,7 +34,7 @@ $(NAME) : $(OBJS)
 		$(CC) $(CFLAGS) $^ \
 		-o $@
 
-$(OBJ_DIR)%.o : $(SRC_DIR)/%.cpp
+$(OBJ_DIR)%.o : $(SRC_DIR)%.cpp
 		@mkdir -p $(OBJ_DIR)
 		$(CC) $(CFLAGS) -o $@ -c $<
 
