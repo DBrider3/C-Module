@@ -5,13 +5,7 @@ RM = rm -rf
 
 NAME = a.out
 
-SRC =	main.cpp\
-		Base.cpp\
-		A.cpp\
-		B.cpp\
-		C.cpp\
-		func.cpp
-
+SRC =	main.cpp
 
 SRC_DIR = ./src/
 SRCS = $(addprefix $(SRC_DIR),$(SRC))

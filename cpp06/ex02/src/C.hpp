@@ -11,3 +11,5 @@ class C : public Base
 		C(C& copy);
 		C& operator = (const C& c);
 };
+
+#endif

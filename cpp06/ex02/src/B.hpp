@@ -11,3 +11,5 @@ class B : public Base
 		B(B& copy);
 		B& operator = (const B& b);
 };
+
+#endif
