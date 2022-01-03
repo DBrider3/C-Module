@@ -3,7 +3,7 @@ CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 RM = rm -rf
 
-NAME = main
+NAME = a.out
 
 SRC =	main.cpp\
 		mutantstack.cpp
