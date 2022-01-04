@@ -8,10 +8,10 @@ int main(void)
 	Point d2(23, 30), d3(22, 30);
 	Point d4(10, 40), d5(11, 39);
 
-	bspPrint(bsp(a, b, c, d));
-	bspPrint(bsp(a, b, c, d1));
-	bspPrint(bsp(a, b, c, d2));
-	bspPrint(bsp(a, b, c, d3));
-	bspPrint(bsp(a, b, c, d4));
-	bspPrint(bsp(a, b, c, d5));
+	bspPrint(bsp(a, b, c, d));	// false
+	bspPrint(bsp(a, b, c, d1));	// true
+	bspPrint(bsp(a, b, c, d2));	// false
+	bspPrint(bsp(a, b, c, d3));	// true
+	bspPrint(bsp(a, b, c, d4));	// false
+	bspPrint(bsp(a, b, c, d5));	// true
 }

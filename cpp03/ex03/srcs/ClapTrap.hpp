@@ -9,8 +9,14 @@
 # define C_EP 10
 # define C_AD 0
 
-# define C_RED  "\033[31m"
-# define GRN "\e[0;32m"
+# define RED    "\033[0;31m"
+# define GREEN  "\033[0;32m"
+# define DARKGREEN "\033[2;32m"
+# define YELLOW "\033[1;33m"
+# define BLUE "\033[1;34m"
+# define PRPL "\033[0;35m"
+# define EOC    "\033[0;0m"
+# define ITALIC "\033[3m"
 
 class ClapTrap
 {

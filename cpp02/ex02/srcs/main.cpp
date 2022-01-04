@@ -15,7 +15,7 @@ int main(void)
 
 	std::cout << Fixed::max(a, b) << std::endl; //10.1016
 
-	/*std::cout << Fixed::min(a, b) << std::endl; //0.0078125
+	std::cout << Fixed::min(a, b) << std::endl; //0.0078125
 	std::cout << std::endl;
 
 	std::cout << --a << std::endl; //0.00390625
@@ -37,7 +37,7 @@ int main(void)
 	std::cout << a - b << std::endl; //-10.1016
 	std::cout << a * b << std::endl; //0
 	std::cout << a / b << std::endl; //0
-	std::cout << std::endl;*/
+	std::cout << std::endl;
 
 	return 0;
 }

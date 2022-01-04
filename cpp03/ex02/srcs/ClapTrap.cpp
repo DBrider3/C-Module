@@ -3,22 +3,22 @@
 ClapTrap::ClapTrap():
 	name("noName"), hitPoint(10), energyPoint(10), attackDamage(0)
 {
-	std::cout << "ClapTrap " << name << " Constructor 👋!!" << std::endl;
+	std::cout << GREEN << "ClapTrap " << EOC << name << " Constructor 👋" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string param):
 	name(param), hitPoint(10), energyPoint(10), attackDamage(0)
 {
-	std::cout << "ClapTrap " << name << "'s Constructor 👋!!" << std::endl;
+	std::cout << GREEN << "ClapTrap " << EOC << name << "'s Constructor 👋" << std::endl;
 }
 
 ClapTrap::~ClapTrap() {
-	std::cout << "ClapTrap " << name << "'s Destructor 🙇‍♂️!!" << std::endl;
+	std::cout << GREEN << "ClapTrap " << EOC << name << "'s Destructor 🙇‍♂️" << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap& copy){
 	*this = copy;
-	std::cout << "ClapTrap " << name << "'s Copy Constructor 👋️!!" << std::endl;
+	std::cout << GREEN << "ClapTrap " << EOC << name << "'s Copy Constructor 👋️" << std::endl;
 }
 
 ClapTrap& ClapTrap::operator = (const ClapTrap& claptrap)
@@ -34,7 +34,7 @@ ClapTrap& ClapTrap::operator = (const ClapTrap& claptrap)
 
 void ClapTrap::attack(std::string const& target)
 {
-	std::cout << "ClapTrap " << name << " attacks " << target << ", causing " << attackDamage << " points of damage!" << std::endl;
+	std::cout << GREEN << "ClapTrap " << EOC << name << " attacks " << target << ", causing " << attackDamage << " points of damage!" << std::endl;
 }
 
 void ClapTrap::takeDamage(unsigned int amount)
@@ -43,7 +43,7 @@ void ClapTrap::takeDamage(unsigned int amount)
 		hitPoint -= amount;
 	else
 		hitPoint = 0;
-	std::cout << "ClapTrap " << name << " takeDamage " << amount << " points!, Current HP: " << hitPoint << std::endl;
+	std::cout << GREEN << "ClapTrap " << EOC << name << " takeDamage " << amount << " points!, Current HP: " << hitPoint << std::endl;
 }
 
 void ClapTrap::beRepaired(unsigned int amount)
@@ -52,5 +52,5 @@ void ClapTrap::beRepaired(unsigned int amount)
 		hitPoint = MAXHP;
 	else
 		hitPoint += amount;
-	std::cout << "ClapTrap " << name << " beRepaired " << amount << " points!, Current HP: " << hitPoint << std::endl;
+	std::cout << GREEN << "ClapTrap " << EOC << name << " beRepaired " << amount << " points!, Current HP: " << hitPoint << std::endl;
 }
