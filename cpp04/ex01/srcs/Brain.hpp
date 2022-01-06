@@ -3,6 +3,7 @@
 
 # include <iostream>
 # include <string>
+# include "Animal.hpp"
 
 # define MAXIDEA 100
 

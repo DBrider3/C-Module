@@ -22,7 +22,7 @@ class ClapTrap
 {
 	public:
 		ClapTrap();
-		~ClapTrap();
+		 ~ClapTrap();
 		ClapTrap(std::string param);
 		ClapTrap(const ClapTrap& copy);
 		ClapTrap& operator = (const ClapTrap& claptrap);

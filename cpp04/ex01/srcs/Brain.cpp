@@ -2,12 +2,12 @@
 
 Brain::Brain()
 {
-	std::cout << "<Brain> Class Contructor!💡" << std::endl;
+	std::cout << PRPL << "Brain" << EOC << " Class Contructor!💡" << std::endl;
 }
 
 Brain::~Brain()
 {
-	std::cout << "<Brain> Class Destructor~💡" << std::endl;
+	std::cout << PRPL << "Brain" << EOC << " Class Destructor~💡" << std::endl;
 }
 
 Brain::Brain(const Brain& copy)

@@ -2,18 +2,18 @@
 
 Animal::Animal()
 {
-	std::cout << "<Animal> Class Contructor!☀️" << std::endl;
+	std::cout << GREEN << "Animal" << EOC << " Class Contructor!☀️" << std::endl;
 }
 
 Animal::Animal(std::string param)
 	: type(param)
 {
-	std::cout << "<Animal> Class Contructor!☀️" << std::endl;
+	std::cout << GREEN << "Animal" << EOC << " Class Contructor!☀️" << std::endl;
 }
 
 Animal::~Animal()
 {
-	std::cout << "<Animal> Class Destructor~🌔" << std::endl;
+	std::cout << GREEN << "Animal" << EOC << " Class Destructor~🌔" << std::endl;
 }
 
 Animal::Animal(const Animal& copy)

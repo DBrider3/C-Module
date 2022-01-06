@@ -3,12 +3,12 @@
 Dog::Dog()
 	: Animal("Dog")
 {
-	std::cout << "<Dog> Class Contructor!🐶" << std::endl;
+	std::cout << BLUE << "Dog" << EOC << " Class Contructor!🐶" << std::endl;
 }
 
 Dog::~Dog()
 {
-	std::cout << "<Dog> Class Destructor~🐶" << std::endl;
+	std::cout << BLUE << "Dog" << EOC << " Class Destructor~🐶" << std::endl;
 }
 
 Dog::Dog(const Dog& copy)
@@ -26,5 +26,5 @@ Dog& Dog::operator = (const Dog& dog)
 
 void Dog::makeSound() const
 {
-	std::cout << "Dog!!!" << std::endl;
+	std::cout << BLUE << "Dog!!!" << EOC << std::endl;
 }

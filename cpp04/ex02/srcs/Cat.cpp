@@ -3,12 +3,12 @@
 Cat::Cat()
 	: Animal("Cat")
 {
-	std::cout << "<Cat> Class Contructor!🐱" << std::endl;
+	std::cout << YELLOW << "Cat" << EOC << " Class Contructor!🐱" << std::endl;
 }
 
 Cat::~Cat()
 {
-	std::cout << "<Cat> Class Destructor~🐱" << std::endl;
+	std::cout << YELLOW << "Cat" << EOC << " Class Destructor~🐱" << std::endl;
 }
 
 Cat::Cat(const Cat& copy)
@@ -26,5 +26,5 @@ Cat& Cat::operator = (const Cat& cat)
 
 void Cat::makeSound() const
 {
-	std::cout << "Cat!!!" << std::endl;
+	std::cout << YELLOW << "Cat!!!" << EOC << std::endl;
 }

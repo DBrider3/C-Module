@@ -21,6 +21,6 @@ int main(void)
     me->use(1, *bob);//cure
 
     delete bob; delete me; delete src;
-    system("leaks a.out");
+    // system("leaks a.out");
     return 0;
 }
