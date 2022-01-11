@@ -4,7 +4,9 @@
 # include <iostream>
 
 typedef struct Data
-{} Data;
+{
+	int i;
+} Data;
 
 class Serialization
 {

@@ -3,27 +3,27 @@
 Bureaucrat::Bureaucrat()
 	: _name("Default"), _grade(150)
 {
-	std::cout << "<" <<  _name << "> constructor called." << std::endl;
+	std::cout << GREEN <<  _name << EOC << " constructor called." << std::endl;
 }
 
 Bureaucrat::Bureaucrat(std::string name, int grade)
 	: _name(name), _grade(grade)
 {
 	isValidGrade(grade);
-	std::cout << "<" <<  _name << "> constructor called." << std::endl;
+	std::cout << GREEN <<  _name << EOC << " constructor called." << std::endl;
 
 }
 
 Bureaucrat::~Bureaucrat()
 {
-	std::cout << "<" <<  _name << "> destructor called." << std::endl;
+	std::cout << RED <<  _name << EOC << " destructor called." << std::endl;
 }
 
 Bureaucrat::Bureaucrat(const Bureaucrat &bur)
 	: _name(bur._name), _grade(bur._grade)
 {
 	*this = bur;
-	std::cout << "<" <<  _name << "> copy constructor called." << std::endl;
+	std::cout << YELLOW <<  _name << EOC << " copy constructor called." << std::endl;
 }
 
 Bureaucrat& Bureaucrat::operator = (const Bureaucrat &bur)
@@ -35,7 +35,9 @@ Bureaucrat& Bureaucrat::operator = (const Bureaucrat &bur)
 
 std::ostream& operator << ( std::ostream &out, const Bureaucrat &bur )
 {
+	out << BLUE;
 	out << bur.getName();
+	out << EOC;
 	out << ", bureaucrat grade ";
 	out << bur.getGrade();
 	return out;

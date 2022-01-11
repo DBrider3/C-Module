@@ -48,8 +48,11 @@ void ScalarConversion::conversion()
 void ScalarConversion::toChar(double param)
 {
 	std::cout << "char:";
-	if (isnan(param) || CHAR_MAX > param || CHAR_MIN < param)
+
+	if (isnan(param) || CHAR_MAX < param || CHAR_MIN > param)
+	{
 		std::cout << " impossible" << std::endl;
+	}
 	else if (!(param >= 32 && param <= 126))
 		std::cout << " Non displayable" << std::endl;
 	else
@@ -60,7 +63,7 @@ void ScalarConversion::toChar(double param)
 void ScalarConversion::toInt(double param)
 {
 	std::cout << "int:";
-	if (param > INT_MAX || param < INT_MIN || isnan(param))
+	if (isnan(param) || param > INT_MAX || param < INT_MIN)
 		std::cout << " impossible" << std::endl;
 	else
 		std::cout << " " << static_cast<int>(param) <<  std::endl;

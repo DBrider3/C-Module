@@ -3,16 +3,20 @@
 int main(void)
 {
 	Serialization a;
-	//unsigned int i = 10;
-	//uintptr_t ptr = i;
-	Data *d = NULL;
+
+	Data *d = new Data;
+	d->i = 10;
 	Data *copyD = NULL;
 	uintptr_t tmp;
 	tmp = a.serialize(d);
-	std::cout << d << std::endl;
-	std::cout << tmp << std::endl;
+	std::cout << "---------------------------------------------" << std::endl;
+	std::cout << "Data Structure D value: " << d->i << std::endl;
+	std::cout << "Take a Data address use serialize: " << tmp << std::endl; // Serialization
 	copyD = a.deserialize(tmp);
-	std::cout << copyD << std::endl;
-
+	std::cout << "Data Structure copyD value: " << copyD->i << std::endl;
+	printf("d Address: %p\ncopyD Address:  %p\n", d, copyD);
+	delete copyD; // copyD, d variables same address
+	d = NULL;
+	copyD = NULL;
 	return (0);
 }

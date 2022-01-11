@@ -17,5 +17,8 @@ int main(void)
 	j = NULL;
 	delete i;
 	i = NULL;
+
+	// Abstract class
+	// const Animal* k = new Animal();
 	return (0);
 }
