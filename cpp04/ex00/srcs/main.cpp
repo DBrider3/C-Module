@@ -36,7 +36,6 @@ int main(void)
 	delete(wrongCat);
 	wrongCat = NULL;
 
-
 	system("leaks a.out");
 	return (0);
 }
